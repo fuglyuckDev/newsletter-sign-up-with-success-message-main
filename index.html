@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <base target="_blank" rel="noopener noreferrer" />
+  </head>
+  <body class="flexBox">
+    <!-- Sign-up form start -->
+
+    <div id="sign__up__form__container" class="flexBox">
+      <div id="details__container" class="flexBox">
+        <div id="details__text__container" class="flexBox">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li><div>Product discovery and building what matters</div></li>
+            <li><div>Measuring to ensure updates are a success</div></li>
+            <li><div>And much more!</div></li>
+          </ul>
+        </div>
+        <div id="details__input__container">
+          <form id="monthly__news__letter__form" class="flexBox">
+            <div class="flexBox" id="input__area__container" class="flexBox">
+              <div>
+                <label for="email">Email address</label>
+                <p id="email__error__message">Valid email required</p>
+              </div>
+              <input
+                type="email"
+                name="email"
+                id="monthly__news__letter__input"
+                required
+                placeholder="email@company.com"
+                autocomplete="email" />
+            </div>
+            <button id="monthly__news__letter__subscribe__button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </div>
+      <div id="image__container"></div>
+    </div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div id="success__message__container">
+      <div></div>
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <strong>ash@loremcompany.com</strong>. Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+      <button id="success__message__dismiss__button">Dismiss message</button>
+    </div>
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/fuglyuckDev/">FuglyuckDev</a>.
+    </div>
+    <script type="text/javascript" src="./logic.js" defer></script>
+  </body>
+</html>
