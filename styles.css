@@ -6,6 +6,7 @@
 * {
   transition: all 0.5s;
   font-family: "Roboto", sans-serif;
+  color: #36384d;
 }
 
 body {
@@ -51,11 +52,6 @@ body,
 #monthly__news__letter__form,
 #input__area__container {
   flex-direction: column;
-}
-
-* {
-  font-family: "Roboto Regular";
-  color: #36384d;
 }
 
 #sign__up__form__container {
