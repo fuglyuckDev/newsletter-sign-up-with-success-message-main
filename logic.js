@@ -9,11 +9,13 @@ const success = document.getElementById("success__message__container");
 const dismissButton = document.getElementById(
   "success__message__dismiss__button"
 );
+const recipient = document.getElementById("success__message__email__recipient");
 
 submitButton.addEventListener("click", (e) => {
   if (input.value.includes("@")) {
     e.preventDefault();
     signUpElement.style.setProperty("display", "none");
+    recipient.innerHTML = input.value;
     success.style.setProperty("display", "flex");
   } else {
     e.preventDefault();
